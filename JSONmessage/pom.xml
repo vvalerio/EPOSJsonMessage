@@ -8,7 +8,35 @@
   <packaging>jar</packaging>
 
   <name>JSONmessage</name>
-  <url>http://maven.apache.org</url>
+
+
+<build>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <configuration>
+          <includePackageNames>org.epos.mq</includePackageNames>       
+        </configuration>
+      </plugin>
+      <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.2.2</version>
+                <configuration>
+                    <tagBase>https://svn.site.net.br/svn/SiteV6/Vitrine</tagBase>
+                </configuration>
+            </plugin>
+    </plugins>
+  </build>
+  
+   <scm>
+    <url>https://github.com/vvalerio/EPOSJsonMessage</url>
+    <connection>scm:git:git://github.com/vvalerio/EPOSJsonMessage.git</connection>
+    <!-- <developerConnection>scm:git:git@github.com:rabbitmq/rabbitmq-java-client.git</developerConnection> -->
+    <!--<tag>v1.1</tag>-->
+    <tag>v1.0</tag>
+  </scm>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
