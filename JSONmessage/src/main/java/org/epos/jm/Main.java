@@ -1,4 +1,4 @@
-package JSONmessage.JSONmessage;
+package org.epos.jm;
 
 public class Main 
 {

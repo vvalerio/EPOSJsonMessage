@@ -1,4 +1,4 @@
-package JSONmessage.JSONmessage;
+package org.epos.jm;
 
 import java.sql.Timestamp;
 import java.util.Arrays;
@@ -30,6 +30,7 @@ public class messageID
     }
 
     public String getID(){ 
-	return timestamp+"-"+randomNum+"-"+arrayIndex+"-"+Arrays.toString(template).replaceAll(", ", ":").replaceAll("\\[", "").replaceAll("\\]", "");}
+	return timestamp+"-"+randomNum+"-"+arrayIndex+"-"+Arrays.toString(template).replaceAll(", ", ":").replaceAll("\\[", "").replaceAll("\\]", "");
+	}
     
 }

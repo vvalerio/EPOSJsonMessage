@@ -1,4 +1,4 @@
-package JSONmessage.JSONmessage;
+package org.epos.jm;
 
 import java.sql.Timestamp;
 
